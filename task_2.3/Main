@@ -13,8 +13,8 @@
 public class Main {
     public static void main(String args[]){
         int i,fact=1;
-        int n=10;// номер факториала
-        for(i=1;i<=n;i++){
+        int n=11;// номер факториала плюс один
+        for(i=1;i<n;i++){
             fact=fact*i;
         }
         System.out.printf("%,d", fact); // "%,d" - разделение тысяч
