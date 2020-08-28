@@ -17,7 +17,6 @@ public class Main {
         for(i=1;i<=n;i++){
             fact=fact*i;
         }
-
         System.out.printf("%,d", fact); // "%,d" - разделение тысяч
     }
 }
