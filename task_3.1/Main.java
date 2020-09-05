@@ -6,7 +6,6 @@
 У меня две бабушки, бабушка "имя бабушки" и "имя бабушки"
 У меня два деда, деда "имя деда" и "имя деда"
 */
-
 public class Main {
     public static void main(String[] args) {
         Person valera = new Person("Валера","Иванов",69,null,null);
@@ -19,8 +18,8 @@ public class Main {
         System.out.println("Меня зовут "+gosha.getName());
         System.out.println("Имя моей мамы: "+gosha.getMother ().getName());
         System.out.println("Имя моего папы: "+gosha.getFather ().getName());
-        System.out.println("У меня две бабушки, бабушка "+jula.getName()+ " и бабушка "+olga.getName());
-        System.out.println("У меня два деда, деда "+oleg.getName()+ " и "+valera.getName());
+        System.out.println("У меня две бабушки, бабушка "+gosha.getMother().getMother().getName()+ " и бабушка "+gosha.getFather().getMother().getName());
+        System.out.println("У меня два деда, деда "+gosha.getFather().getFather().getName()+ " и "+gosha.getMother().getFather().getName());
 
     }
 }
