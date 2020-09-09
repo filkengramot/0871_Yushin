@@ -22,27 +22,23 @@ public class Dog {
         this.age = age;
     }
 
-    private String getName() {
+    public String getName() {
         return name;
     }
 
-    private void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    private int getAge() {
+    public int getAge() {
         return age;
     }
 
-    private void setAge(int age) {
+    public void setAge(int age) {
         this.age = age;
     }
     
-    public static void main(String[] args) {
-        Dog dog = new Dog ("Бобик", 5);
-        System.out.println(dog.age);
-        System.out.println(dog.name);
-        }
+    public static void main(String[] args) {}
      
     }
 
