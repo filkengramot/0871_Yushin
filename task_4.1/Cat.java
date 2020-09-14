@@ -56,6 +56,15 @@ public class Cat {
     }
 
     public static void main(String[] args) {
-        
+        Cat cat = new Cat();
+        cat.age = 3;
+        cat.strength = 4;
+        cat.weight = 3;
+        Cat anothercat = new Cat();
+        anothercat.age = 4;
+        anothercat.strength = 2;
+        anothercat.weight = 2;
+        System.out.println(cat.fight(anothercat));
     }
+    
 }
