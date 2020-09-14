@@ -28,7 +28,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        System.out.println("Укажите путь к файлу с данными: ");
+        System.out.println("Укажите путь к файлу с данными. Свойства -> Безопасность -> Скопировать слева направо Имя объекта: ");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         Scanner scanner = new Scanner(new FileInputStream(reader.readLine()));
         ArrayList<Long> list = new ArrayList<>();
