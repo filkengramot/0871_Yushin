@@ -27,20 +27,27 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 public class Main {
+    
     public static void main(String[] args) throws IOException {
+        
         System.out.println("Укажите путь к файлу с данными. Свойства -> Безопасность -> Скопировать слева направо Имя объекта: ");
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        Scanner scanner = new Scanner(new FileInputStream(reader.readLine()));
-        ArrayList<Long> list = new ArrayList<>();
-        while(scanner.hasNext()) {
-            long number = scanner.nextLong();
-            if ((number % 2) == 0) {
-                list.add(number);
+        
+        try {
+            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+            Scanner scanner = new Scanner(new FileInputStream(reader.readLine()));
+            ArrayList<Long> list = new ArrayList<>();
+            while (scanner.hasNext()) {
+                long number = scanner.nextLong();
+                if ((number % 2) == 0) {
+                    list.add(number);
+                }
             }
-        }
-        Collections.sort(list);
-        for (long number : list) {
-            System.out.println(number);
+            Collections.sort(list);
+            for (long number : list) {
+                System.out.println(number);
+            }
+        } catch (Exception except) {
+            System.out.println("!!!! Алярм, ошибка !!!! " + except);
         }
     }
 }
