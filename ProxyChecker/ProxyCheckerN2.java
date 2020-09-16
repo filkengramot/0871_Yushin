@@ -2,7 +2,7 @@ import java.io.*;
 import java.net.*;
 
 
-public class ProxyCheckerN3 {
+public class ProxyCheckerN2 {
     public static void main(String[] args) throws IOException {
         FileReader reader = new FileReader("C://java/test.txt");
         int c;
